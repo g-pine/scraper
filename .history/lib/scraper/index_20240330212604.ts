@@ -38,7 +38,7 @@ export async function scrapeAmazonProduct(url: string) {
         );
 
         const outOfStock = $('#availability span').text().trim().toLowerCase() === 'currently unavailable'
-        console.log({title, currentlyPrice, originalPrice, outOfStock});
+        console.log({title, currentlyPrice, originalPrice});
         
 
     } catch (error: any) {
